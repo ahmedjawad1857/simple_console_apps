@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import inquirer, { QuestionCollection } from "inquirer";
+import inquirer, { Answers, QuestionCollection } from "inquirer";
 import chalk from "chalk";
 import chalkAnimation from "chalk-animation";
 
@@ -57,7 +57,7 @@ const generateTable = async (
 
 await displayWelcomeMessage();
 
-const questions: QuestionCollection<any> = [
+const questions: QuestionCollection<Answers> = [
   {
     name: "tableNum",
     type: "number",
@@ -76,7 +76,7 @@ const questions: QuestionCollection<any> = [
   },
 ];
 
-const answers: any = await inquirer.prompt(questions);
+const answers: Answers = await inquirer.prompt(questions);
 
 const tableLength: number = answers.tableLen;
 const tableNumber: number = answers.tableNum;
