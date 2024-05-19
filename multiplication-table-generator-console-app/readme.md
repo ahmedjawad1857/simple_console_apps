@@ -69,3 +69,9 @@ Multiplication table of 2 up to 10:
 ### here you see the code
 
 [Table Master](https://github.com/ahmedjawad1857/simple_node_projects/multiplication-table-genius-console-app)
+
+## What's new in version 2.0.0
+
+- Now you have interactive app
+- now can enjoy different colors while gener
+  ating table
